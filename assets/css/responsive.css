@@ -1,0 +1,11 @@
+@media (max-width: 991px) {
+  /* =============== banner section start =============== */
+  .Loan-banner-section .banner-img-section .swiper-slide {
+    min-height: 90vh;
+  }
+  .Loan-banner-section .banner-img-section .swiper-slide .img-box-1 {
+    position: absolute;
+    left: 0px;
+  }
+  /* =============== banner section End =============== */
+}/*# sourceMappingURL=responsive.css.map */

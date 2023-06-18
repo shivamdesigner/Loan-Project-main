@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Jost", sans-serif;
+}
+
+html {
+  font-size: 90.6%;
+}
+
+:root {
+  --theam-color:#1a4dbe;
+  --light-theam-color:#2c3655;
+  --secondary-color:#055c2d;
+  --white:#ffffff;
+  --black:#000000;
+  --dark-white:#dbdbdb;
+  --light-blue: #b0baf1;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+button {
+  width: 100px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+  border: 1px solid var(--theam-color);
+  border-radius: 30px;
+  background-color: transparent;
+}
+
+/* ============== navbar start ============ */
+.header-section {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: all 0.3s;
+}
+.header-section .navbar {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  padding: 20px 15px;
+  background-color: var(--white);
+}
+.header-section .navbar .navbar-brand {
+  width: 70px;
+}
+.header-section .navbar .menu-bar-section li {
+  padding: 5px 10px;
+}
+.header-section .navbar .menu-bar-section li a {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.header-section .navbar .menu-bar-section li a:hover {
+  color: var(--theam-color);
+}
+
+.navbar-scroll {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* ============== navbar End ============ */
+/* =============== banner section start =============== */
+.Loan-banner-section .banner-img-section .swiper {
+  width: 100%;
+  height: 100%;
+}
+.Loan-banner-section .banner-img-section .swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+.Loan-banner-section .banner-img-section .swiper-slide .img-box-1 {
+  position: absolute;
+  left: 100px;
+}
+/* =============== banner section End =============== */
+/* ============ why-choose-section start ============= */
+.why-choose-section {
+  margin: 50px 0;
+}
+.why-choose-section .why-choose-contain .icon-box {
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--theam-color);
+}
+
+/* ============ why-choose-section End ============= */
+/* ============= Testimonials-section start ===========*/
+.Testimonials-section {
+  margin: 50px 0;
+}
+.Testimonials-section .swiper-wrapper {
+  margin: 10px 0;
+}
+.Testimonials-section .swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.Testimonials-section .swiper-slide .card {
+  background: var(--white);
+  box-shadow: 0 8px 30px -7px #c9dff0;
+  margin: 0 20px;
+  padding: 0 10px;
+  border-radius: 20px;
+  border: 0;
+}
+.Testimonials-section .swiper-slide .card .img-box {
+  height: 120px;
+  width: 120px;
+  margin-inline: auto;
+  margin: 15px auto 0;
+}
+.Testimonials-section .swiper-slide .card .card-img-top {
+  border-radius: 50%;
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0 8px 20px -4px #95abbb;
+}
+.Testimonials-section .swiper-slide .card .card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+.Testimonials-section .swiper-slide .card .card-body p {
+  padding-bottom: 15px;
+}
+
+/* ============= Testimonials-section End ===========*/
+/* =========== loan-counter-section start =============== */
+.loan-counter-section {
+  margin: 50px 0;
+}
+.loan-counter-section .counter-boday {
+  padding: 20px;
+  box-shadow: 0 8px 30px -7px #c9dff0;
+  height: 200px;
+}
+.loan-counter-section .counter-boday .counter-number-section {
+  margin: 20px 0;
+}
+.loan-counter-section .counter-boday .counter-number-section h3 {
+  text-align: center;
+}
+.loan-counter-section .counter-boday p {
+  text-align: center;
+  width: min(100% - 20px, 80%);
+  margin-inline: auto;
+}
+
+/* =========== loan-counter-section End =============== */
+/* ================ loan application start ============ */
+.Loan-application-setion .loan-application-body {
+  box-shadow: 0 8px 30px -7px #c9dff0;
+  padding: 5rem;
+  margin: 20px 0;
+  width: min(100% - 20px, 90%);
+  margin-inline: auto;
+}
+.Loan-application-setion .loan-application-body .loan-application-head {
+  margin: 2rem 0;
+}
+.Loan-application-setion .loan-application-body .from-section .m-basics {
+  margin: 1rem 0;
+}
+.Loan-application-setion .loan-application-body .from-section select {
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 8px 5px;
+}
+.Loan-application-setion .loan-application-body .from-section textarea {
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 8px 5px;
+}
+.Loan-application-setion .loan-application-body .from-section input {
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 8px 5px;
+}
+
+/* ================ loan application End ============ */
+/* =========== footer setion start ============*/
+.footer-wrapper {
+  padding: 30px 10px;
+}
+.footer-wrapper .footer-area .single-footer-caption {
+  margin-bottom: 50px;
+}
+.footer-wrapper .footer-area .footer-logo {
+  width: 80px;
+  margin-bottom: 35px;
+}
+.footer-wrapper .footer-area .footer-tittle h4 {
+  font-size: 1.3rem;
+}
+.footer-wrapper .footer-area .footer-tittle ul li {
+  padding: 7px 5px;
+}
+.footer-wrapper .footer-area .footer-tittle ul li a {
+  color: var(--black);
+  transition: 0.3s;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.footer-wrapper .footer-area .footer-tittle ul li a:hover {
+  color: var(--theam-color);
+}
+.footer-wrapper .footer-area .footer-form .email-class {
+  border: 1px solid var(--theam-color);
+  padding: 10px;
+  width: 300px;
+}
+.footer-wrapper .footer-area .footer-form .btn-section {
+  margin: 10px 0;
+}
+.footer-wrapper .footer-area .footer-form .btn-section button {
+  color: white;
+  background-color: var(--theam-color);
+  box-shadow: 0 20px 20px rgba(26, 77, 190, 0.2);
+  margin-bottom: 20px;
+  width: 170px;
+  padding: 10px 30px !important;
+  transition: all 0.3s;
+}
+.footer-wrapper .footer-area .footer-form .btn-section button:hover {
+  background-color: transparent;
+  color: var(--black);
+}
+.footer-wrapper .footer-area .footer-social {
+  margin-top: 40px;
+}
+.footer-wrapper .footer-area .footer-social a {
+  padding: 10px;
+  border-radius: 5px;
+  margin-inline: 5px;
+  width: 50px;
+  height: 50px;
+  color: var(--black);
+  transition: all 0.3s;
+  box-shadow: rgba(26, 77, 190, 0.2) 0px 2px 8px 0px;
+}
+.footer-wrapper .footer-area .footer-social a i {
+  font-size: 17px;
+}
+.footer-wrapper .footer-area .footer-social a:hover {
+  background-color: var(--theam-color);
+}
+.footer-wrapper .footer-area .footer-social a:hover i {
+  color: var(--white);
+}
+
+/* =========== footer setion End ============*/
+@media (min-width: 1500px) {
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1500px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1700px !important;
+  }
+}/*# sourceMappingURL=style.css.map */
